@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/topography.png");
+}
+
+.row{ 
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+ }
+
+ a {
+	 color: #777777;
+ }
+header {
+
+}
+
+.navbar-container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.navbar-header {
+	width: 100%;
+	height: 90px;
+	margin: 0 auto 0 auto;
+	padding: 22px;
+	text-align: center;
+	background: #4aaaad;
+	color: #ffffff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+}
+
+.header-nav {
+	background: #ffffff;
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	text-align: center;
+	border-bottom: solid #cccccc 1px;
+}
+
+.nav-link {
+	margin-top: 10px;
+	width: 33.3%;
+	border-right: solid #cccccc 1px;
+}
+
+.nav-link:last-child {
+	border-right: none;
+}
+
+main{ 
+	margin-bottom: 30px;
+}
+
+.main-content {
+	padding: 11px 22px; 
+	background: #ffffff;
+	border: solid #dddddd 1px;
+}
+
+.about-header {
+	border-bottom: solid #dddddd 4px;
+	color: #4aaaad;
+	padding-bottom: 22px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	
+}
+
+.about-content {
+	padding-top: 22px;
+}
+
+.about-img-div {
+	margin-bottom: 22px;
+}
+
+aside {
+	margin-top: 40px;
+	background-color: #ffffff;
+	padding: 11px 22px;
+	border: solid #dddddd 1px;
+}
+
+.aside-header {
+	color: #4aaaad;
+	border-bottom: solid #dddddd 2px;
+	padding-bottom: 22px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	
+}
+
+.aside-nav {
+	
+}
+
+.aside-img {
+	width: 65px;
+	height: 65px;
+	margin: 10px 5px 10px 0;
+}
+
+.portfolio-img-div {
+	margin-bottom: 62px;
+}
+.portfolio-img {
+	max-width: 100%;
+}
+
+.portfolio-img-title {
+	height: 60px;
+	background: #4aaaad;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 18px;
+	position: relative;
+	margin-top: -88px;
+	font-size: 1.5em;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#email {
+	margin-bottom: 10px;
+}
+
+#form-text {
+	height: 200px;
+}
+
+.submit {
+	background: #4aaaad;
+	color: #ffffff;
+}
+
+footer {
+	height: 90px;
+	border-top: solid #4aaaad 8px;
+	background: #666666;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 32px;
+}
