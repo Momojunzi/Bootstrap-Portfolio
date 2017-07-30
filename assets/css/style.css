@@ -10,50 +10,49 @@ html, body {
 	background-image: url("../images/topography.png");
 }
 
-.row{ 
-	margin-left: 0;
-	margin-right: 0;
-	width: 100%;
- }
-
- a {
+a {
 	 color: #777777;
  }
-header {
+
+.header {
+	width: 100%;
+	background: #ffffff;
+	border-bottom: solid #cccccc 1px;
 
 }
 
-.navbar-container {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
 
-.navbar-header {
-	width: 100%;
+
+.nav-header {
+	/*width: 100%;*/
 	height: 90px;
-	margin: 0 auto 0 auto;
-	padding: 22px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 22px;
 	text-align: center;
 	background: #4aaaad;
 	color: #ffffff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: bold;
+
+
 }
 
 .header-nav {
 	background: #ffffff;
-	width: 100%;
+	/*width: 100%;*/
 	height: 60px;
-	margin: 0;
+	margin-top: 32px;
+	margin-bottom: 0;
 	text-align: center;
-	border-bottom: solid #cccccc 1px;
+	/*padding-top: 12px;*/
+	
 }
 
 .nav-link {
-	margin-top: 10px;
-	width: 33.3%;
+	/*margin-top: 11px;*/
 	border-right: solid #cccccc 1px;
+	font-size: 1.25em;
 }
 
 .nav-link:last-child {
@@ -61,35 +60,51 @@ header {
 }
 
 main{ 
+	width: 100%;
+	margin-top: 32px;
 	margin-bottom: 30px;
 }
 
 .main-content {
-	padding: 11px 22px; 
+	width: 90%;
+	margin-left: 5%;
 	background: #ffffff;
 	border: solid #dddddd 1px;
+	padding-bottom: 22px;
 }
 
 .about-header {
 	border-bottom: solid #dddddd 4px;
 	color: #4aaaad;
+	padding-left: 0;
 	padding-bottom: 22px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	
+	font-weight: bold;
+	margin-bottom: 32px;
 }
 
-.about-content {
-	padding-top: 22px;
+.about-text {
+	padding: 0 ;
 }
 
 .about-img-div {
+	padding-left: 0;
+	padding-right: 0;
 	margin-bottom: 22px;
+	margin-right: 5%;
 }
 
-aside {
+.about-img {
+	width: 100%;
+}
+
+.aside {
+
+	width: 90%;
+	margin-left: 5%;
 	margin-top: 40px;
 	background-color: #ffffff;
-	padding: 11px 22px;
+	padding-bottom: 11px;
 	border: solid #dddddd 1px;
 }
 
@@ -98,22 +113,26 @@ aside {
 	border-bottom: solid #dddddd 2px;
 	padding-bottom: 22px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	
+	font-weight: bold;
+	padding-left: 0;
 }
 
 .aside-nav {
-	
+	padding-left: 0;
 }
 
 .aside-img {
-	width: 65px;
-	height: 65px;
+	width: 55px;
+	height: 55px;
 	margin: 10px 5px 10px 0;
 }
 
 .portfolio-img-div {
 	margin-bottom: 62px;
+	padding-left: 0;
+	padding-right: 0;
 }
+
 .portfolio-img {
 	max-width: 100%;
 }
@@ -143,6 +162,22 @@ aside {
 	color: #ffffff;
 }
 
+.about-text {
+	font-size: 1.25em;
+	padding: 0 5% 0 10%;
+
+}
+
+.contact-form {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.container {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
 footer {
 	height: 90px;
 	border-top: solid #4aaaad 8px;
@@ -150,4 +185,80 @@ footer {
 	text-align: center;
 	color: #ffffff;
 	padding-top: 32px;
+	font-size: 1.5em;
+}
+
+@media screen and (min-width: 640px) {
+	.nav-header {
+		margin-left: 5%;
+	}
+
+	.header-nav {
+		margin-right: 5%;
+		
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.nav-content {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.aside {
+		margin-top: 0;
+	}
+
+}
+ @media screen and (min-width: 980px) {
+ 	.portfolio-img, .portfolio-img-title {
+ 		width: 95%
+ 	}
+ 	.right {
+ 		margin-left: 2.5%;
+ 	}
+ }
+
+@media screen and (max-width: 767px){
+
+	.header-nav {
+		padding-top: 0px;
+
+	}
+	.portfolio-img, .portfolio-img-title {
+		width: 95%;
+	}
+	.right {
+		margin-left: 2.5%;
+	}
+
+	.about-img-div {
+		float: left;
+	}
+
+	.aside {
+		margin-top: 32px;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.portfolio-img, .portfolio-img-title, .nav-header, .header-nav{
+		width: 100%;
+	}
+	.portfolio-img-div, .about-img-div, .about-text{
+		width: 85%;
+		margin-left: 7.5%
+	}
+
+	.about-img-div {
+		float: none;
+	}
+
+	.about-text {
+		padding: 0;
+	}
+	
+	.nav-header, .header-nav { 
+		margin-left: 0;
+	 }
 }
